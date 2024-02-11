@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HelloController!{% endblock %}
+{% block title %}Hello StaticController!{% endblock %}
 
 {% block body %}
     <style>
@@ -8,7 +8,10 @@
         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     </style>
 
-    <h1> Il y a du progrès </h1>
-    <a href="{{ path('app_hello') }}">Retour</a>
+    <div class="example-wrapper">
+        <h1>Hello {{ controller_name }}! ✅</h1>
+        <h2>REGISTER</h2>
 
+
+    </div>
 {% endblock %}

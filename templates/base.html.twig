@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% comment %} <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -16,4 +16,44 @@
     <body>
         {% block body %}{% endblock %}
     </body>
+</html>
+ {% endcomment %}
+
+ {# templates/base.html.twig #}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}"> <!-- Path to your main CSS -->
+    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}"> <!-- Path to your sidebar CSS -->
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}"> <!-- Path to your header CSS -->
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}"> <!-- Path to your footer CSS -->
+</head>
+<body>
+    <header>
+        
+        {% include 'partials/header.html.twig' %}
+    </header>
+
+    <aside id="sidebar">
+        
+        {% include 'partials/sidebar.html.twig' %}
+    </aside>
+
+    <main>
+        
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+       
+        {% include 'partials/footer.html.twig' %}
+    </footer>
+
+    
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
 </html>

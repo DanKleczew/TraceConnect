@@ -1,1 +1,15 @@
-admin
+{# templates/admin.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block main %}
+  <div class="admin-options">
+    <h1>OPTIONS ADMIN</h1>
+    <div class="option" id="add-item">
+      <a href="{{ path('admin_add_item') }}" class="option-link">Ajouter un élément</a>
+    </div>
+    <div class="option" id="modify-delete-item">
+      <a href="{{ path('admin_modify_delete_item') }}" class="option-link">Modifier/Supprimer un élément</a>
+    </div>
+  </div>
+{% endblock %}

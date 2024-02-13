@@ -1,0 +1,46 @@
+/* main.css or index.css */
+
+.main-content {
+  text-align: center;
+  padding: 50px;
+  background: url('path-to-your-background-image.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.title {
+  color: #2e2e2e; 
+  font-size: 48px; 
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #f00; 
+  font-size: 18px; 
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar label {
+  display: block;
+  color: #2e2e2e; 
+  margin-bottom: 10px;
+}
+
+.search-bar input[type="text"] {
+  width: 300px; 
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}

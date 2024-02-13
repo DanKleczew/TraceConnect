@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% comment %} {% extends 'base.html.twig' %}
 
 {% block title %}Hello AcceuilController!{% endblock %}
 
@@ -17,4 +17,20 @@
         <li>Your template at <code><a href="{{ 'C:/Users/shksl/Desktop/TraceConnect/templates/acceuil/index.html.twig'|file_link(0) }}">templates/acceuil/index.html.twig</a></code></li>
     </ul>
 </div>
+{% endblock %} {% endcomment %}
+
+{# templates/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block main %}
+  <div class="main-content">
+    <h1 class="title">BC24 - Traçabilité</h1>
+    <a href="#" class="subtitle">BC24 : Qu'est ce que c'est ?</a>
+    <div class="search-bar">
+      <label for="nfc-code">Obtenir une information sur un produit</label>
+      <input type="text" id="nfc-code" name="nfc-code" placeholder="Code NFC">
+      <button type="submit">Recherche</button>
+    </div>
+  </div>
 {% endblock %}

@@ -1,1 +1,35 @@
-add
+
+{% extends 'base.html.twig' %}
+
+{% block main %}
+  <div class="admin-add-product">
+    <h1>OPTIONS ADMIN</h1>
+    <form action="{{ path('admin_save_product') }}" method="post" enctype="multipart/form-data">
+      <div class="form-field">
+        <label for="product-name">Nom produit :</label>
+        <input type="text" id="product-name" name="product_name" required>
+      </div>
+      <div class="form-field">
+        <label for="product-category">Catégorie produit :</label>
+        <input type="text" id="product-category" name="product_category" required>
+      </div>
+      <div class="form-field">
+        <label for="product-date">Date :</label>
+        <input type="date" id="product-date" name="product_date" required>
+      </div>
+      <div class="form-field">
+        <label for="product-contamination">Contamination :</label>
+        <input type="text" id="product-contamination" name="product_contamination" required>
+      </div>
+      <div class="form-field">
+        <label for="product-image">Importer image du produit :</label>
+        <input type="file" id="product-image" name="product_image" required>
+        <button type="button">Upload</button>
+      </div>
+      <div class="form-actions">
+        <button type="submit" name="action" value="add" class="btn">Ajouter produit</button>
+        <button type="submit" name="action" value="modify" class="btn">Modifier produit</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
